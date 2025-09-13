@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: linear-gradient(180deg , rgb(249, 224, 34), transparent,  rgb(201, 165, 21), transparent, rgb(154, 105, 8));
+            /* scrollbar-width: thin; 
+            scrollbar-color: #aaa transparent; */
+        }
+
+        header {
+            background-color: rgb(249, 224, 34);   
+            color: rgb(0, 0, 0);
+            height: 100px;
+            font-size: 50px;
+            justify-content: center;
+            text-align: center;
+            /* position: sticky; */
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(249, 224, 34);
+            margin-top: 10px;
+        }
+        header ul li {
+            float: left;
+            font-size: 25px;
+            margin-right: 10px;
+            margin-left: 10px;
+            /* padding-right: 20px;
+            padding-left: 20px; */
+        }
+        header ul li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            /* padding: 14px 16px; */
+            text-decoration: none;
+        }
+        header ul li a:hover {
+            background-color: rgb(0,0, 0);
+            color: rgb(249, 224, 34);
+        }
+
+        main {
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: calc(100% - 100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1 1 280px;
+            height: 400px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+            margin: 25px;
+            float: left;
+            background-color: rgb(154, 105, 8);
+            color: white;
+            /* width: 200px; */
+        }
+
+        .img_container {
+            width: 100%;
+            height: 50%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content_container {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content {
+            padding: 10px;
+            padding-left: 10px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        button {
+            outline: none;
+            border: 0px;
+            height: 30px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(201, 165, 21);
+            color: black;
+            font-size: 15px;
+            font-weight: 10px;
+            display: block;
+            /* margin-right: 40px; */
+
+        }
+        button:hover {
+            background-color: rgb(249, 224, 34);
+            color: black;
+            cursor: pointer;
+        }
+        footer {
+            background-color: rgb(154, 105, 8);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            padding: 10px;
+            /* position: fixed; */
+            max-width: 100%;
+            bottom: 0;
+            height: 95px;   
+        }
+        .Footer_Para {
+            margin: 5px 0;
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: center;
+            display: block;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <u>Elite Motors</u>
+        <ul>
+            <li><a href="https://ismail-054.github.io/secret-project/">Home</a></li>
+            <li><a href="./Cars.html">Cars</a></li>
+            <li><a href="./About_Us.html">About Us</a></li>
+            <li><a href="./Contact_Us.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="card">
+            <div class="img_container">
+                <img src="./hayabusa.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Hayabusa</h2>
+                    <p class="description">
+                        The Suzuki Hayabusa is a sport motorcycle made by Suzuki since 1999. It is known for its
+                        speed
+                        and
+                        distinctive styling.
+                    </p>
+                    <p class="price">Rs: 2,500,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Suzuki_Hayabusa">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./davidson.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Harley Davidson</h2>
+                    <p class="description">
+                        Harley-Davidson, Inc. is an American motorcycle manufacturer founded in 1903 in Milwaukee,
+                        Wisconsin.
+                    </p>
+                    <p class="price">Rs: 7,500,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Harley-Davidson">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./g-wagon.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Mercedes G-Wagon</h2>
+                    <p class="description">
+                        The Mercedes-Benz G-Class, also known as the G-Wagon, is a luxury SUV
+                    </p>
+                    <p class="price">Rs: 360,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./lambo sian roadster.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Lamborghini Sian Roadster</h2>
+                    <p class="description">
+                        The Lamborghini Sián Roadster is a limited-edition hybrid supercar.
+                    </p>
+                    <p class="price">Rs: 57,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Lamborghini_Si%C3%A1n_FKP_37">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./Audi-e-tron-GT.jpg" alt="A backgrosund image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Audi E-Tron GT</h2>
+                    <p class="description">
+                        The Audi e-tron GT is an all-electric grand tourer known for its sleek design, impressive
+                        performance.
+                    </p>
+                    <p class="price">Rs: 47,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Audi_e-tron_GT">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./cyber truck.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Tesla Cyber Truck</h2>
+                    <p class="description">
+                        The Tesla Cybertruck is an all-electric, light-duty truck announced by Tesla,
+                        Inc.
+                    </p>
+                    <p class="price">Rs: 89,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Tesla_Cybertruck">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./laferrari.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>LaFerrari</h2>
+                    <p class="description">
+                        The LaFerrari is a limited-production hybrid sports car built by Ferrari. It combines a V12
+                        engine to deliver exceptional performance.
+                    </p>
+                    <p class="price">Rs: 112,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/LaFerrari">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./buggati bolide.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Buggati Bolide</h2>
+                    <p class="description">
+                        The Bugatti Bolide is a track-focused hypercar designed for extreme performance and speed.
+                    </p>
+                    <p class="price">Rs: 245,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Bugatti_Bolide">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./buggati chiron.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Buggati Chiron</h2>
+                    <p class="description">
+                        The Bugatti Chiron is a mid-engine two-seater sports car developed and manufactured by
+                        Bugatti
+                        Automobiles.
+                    </p>
+                    <p class="price">Rs: 275,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Bugatti_Chiron">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./lambo urus.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Lamborghini Urus</h2>
+                    <p class="description">
+                        The Lamborghini Urus is a luxury SUV known for its powerful performance.
+                    </p>
+                    <p class="price">Rs: 178,000,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Lamborghini_Urus">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./porsche 911 gt3 rs.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Porsche 911</h2>
+                    <p class="description">
+                        The Porsche 911 GT3 is a high-performance model of the Porsche 911 sports car.
+                    </p>
+                    <p class="price">Rs: 368,050,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Porsche_911_GT3">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_container">
+                <img src="./ford gt.jpg" alt="A background image">
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h2>Ford GT</h2>
+                    <p class="description">
+                        The Ford GT is a mid-engine two-seater sports car manufactured and marketed by American
+                        automobile manufacturer Ford
+                    </p>
+                    <p class="price">Rs: 656,059,000</p>
+                </div>
+                <form action="https://en.wikipedia.org/wiki/Ford_GT">
+                    <button type="submit">More Info</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Elite Motors. All rights reserved.</p>
+        <p class="Footer_Para">Call Us On: <br /> +92 334 7909266</p>
+        <p class="Footer_Para">Email Us At: <br />mimemon54@gmail.com</p>
+        <p class="Footer_Para">Address: <br /> 1234 Car St, Auto City, CA 90210 </p>
+    </footer>
+</body>
+
+</html>
